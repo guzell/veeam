@@ -27,7 +27,7 @@ $(function(){//drop-down for USA
 });
 
 
-$(document).ready(function() {//popap video
+$(function() {//popap video
     $(".fancybox").fancybox({
             nextEffect  : 'none',
             prevEffect  : 'none',
