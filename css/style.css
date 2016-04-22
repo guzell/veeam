@@ -33,7 +33,7 @@ a {
     width: 96%;
     background: url(../imgs/pattern-basic.png);
 }
-/*mobile version begin------------------------------------------------------------------------------------*/
+/*mobile version begin*/
 .container {
     width: 96%;
     margin: 0 auto;
@@ -281,7 +281,7 @@ h5 {
 .footer-info a {
     color: #1091c7;
 }
-/*HEADER mobile version end------------------------------------------------------------------------------------------------*/
+/*HEADER mobile version end*/
 /*HEADER tablet version begin*/
 @media (min-width: 762px){
     body {
@@ -344,7 +344,7 @@ h5 {
         float: none;
     }
 }
-/*tablet version end-------------------------------------------------------------------------*/
+/*tablet version end*/
 /*desktop version begin*/
 @media (min-width: 990px) {
     body {
@@ -438,4 +438,4 @@ h5 {
         padding: 10px;
     }
 }
-/*desctop version end_____________________________________________________*/
+/*desctop version end*/

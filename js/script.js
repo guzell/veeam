@@ -11,27 +11,20 @@ $(function() {//tabs
 })
 
 
-document.addEventListener("DOMContentLoaded", ready);//drop-down for USA
-function ready() {
-    var states = document.getElementById("states");
-    var sel = document.getElementById("country");
-
-    console.log(states);
-    console.log(sel);
-    onChangeSelector();
-    sel.addEventListener("change",onChangeSelector);
-
-    function onChangeSelector(){
-        var val = sel.value;
-        console.log(val);
-        if (val == "USA") {
-            states.style.display = 'block';
+$(function(){//drop-down for USA
+    var $sel = $('.country');
+    $sel.on("change",function() {
+        var $val = this.value;
+        var $states = $(this).parents().find('.states');
+        console.log($states);
+        if ($val == "USA") {
+            $states.css('display','block');
         } else {
-            states.style.display = 'none';
+            $states.css('display','none');
         }
-    }
-}
-
+    });
+    $sel.trigger("change");
+});
 
 
 $(document).ready(function() {//popap video
